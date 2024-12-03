@@ -1,0 +1,859 @@
+{
+  "intents": [
+    {
+      "tag": "definicion_python",
+      "patterns": ["¿Qué es Python?", "¿Cómo definirías Python?", "¿Qué significa Python?"],
+      "responses": ["Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su sintaxis clara y legibilidad."]
+    },
+    {
+      "tag": "caracteristicas_python",
+      "patterns": ["¿Cuáles son las características de Python?", "¿Qué hace especial a Python?", "¿Qué ventajas tiene Python?"],
+      "responses": ["Python es fácil de aprender, tiene una sintaxis sencilla, es interpretado, de tipado dinámico, y cuenta con una gran comunidad y librerías."]
+    },
+    {
+      "tag": "tipado_python",
+      "patterns": ["¿Qué es el tipado dinámico en Python?", "¿Cómo funciona el tipado en Python?", "¿Python es de tipado estático o dinámico?"],
+      "responses": ["Python tiene un tipado dinámico, lo que significa que no es necesario declarar el tipo de una variable antes de usarla. El tipo de una variable se determina automáticamente en tiempo de ejecución."]
+    },
+    {
+      "tag": "tipos_de_datos",
+      "patterns": ["¿Cuáles son los tipos de datos en Python?", "¿Qué tipos de datos existen en Python?", "¿Cuáles son los tipos de variables en Python?"],
+      "responses": ["Los tipos de datos básicos en Python son: int (números enteros), float (números decimales), str (cadenas de texto), bool (valores lógicos True/False), list (listas), tuple (tuplas), set (conjuntos), dict (diccionarios)."]
+    },
+    {
+      "tag": "estructuras_control",
+      "patterns": ["¿Qué estructuras de control existen en Python?", "¿Qué tipos de bucles existen en Python?", "¿Cómo se hacen condicionales en Python?"],
+      "responses": ["En Python existen estructuras de control como 'if' para condicionales, y 'for' y 'while' para bucles. Los bucles se utilizan para repetir bloques de código."]
+    },
+    {
+      "tag": "funciones_python",
+      "patterns": ["¿Qué son las funciones en Python?", "¿Cómo se define una función en Python?", "¿Para qué sirven las funciones en Python?"],
+      "responses": ["Las funciones en Python son bloques de código reutilizables que realizan una tarea específica. Se definen usando la palabra clave 'def', seguida del nombre de la función y paréntesis."]
+    },
+    {
+      "tag": "clases_python",
+      "patterns": ["¿Qué son las clases en Python?", "¿Cómo se definen clases en Python?", "¿Qué es la programación orientada a objetos en Python?"],
+      "responses": ["Las clases en Python son plantillas para crear objetos. Se definen usando la palabra clave 'class' y permiten crear instancias (objetos) con atributos y métodos asociados."]
+    },
+    {
+      "tag": "excepciones_python",
+      "patterns": ["¿Qué son las excepciones en Python?", "¿Cómo manejar excepciones en Python?", "¿Para qué sirven las excepciones en Python?"],
+      "responses": ["Las excepciones son errores que ocurren durante la ejecución de un programa. Se manejan con el bloque 'try-except', lo que permite capturar y manejar errores sin detener el programa."]
+    },
+    {
+      "tag": "librerias_python",
+      "patterns": ["¿Qué son las librerías en Python?", "¿Cuáles son algunas librerías populares de Python?", "¿Cómo instalar una librería en Python?"],
+      "responses": ["Las librerías en Python son colecciones de módulos que proporcionan funciones y herramientas adicionales. Algunas librerías populares son NumPy, pandas, Matplotlib, y TensorFlow. Se instalan usando 'pip'."]
+    },
+    {
+      "tag": "listas_python",
+      "patterns": ["¿Qué es una lista en Python?", "¿Cómo se crean listas en Python?", "¿Cuáles son las características de una lista en Python?"],
+      "responses": ["Una lista en Python es una colección ordenada y mutable de elementos. Se define usando corchetes, por ejemplo: ['manzana', 'banana', 'cereza']."]
+    },
+    {
+      "tag": "tuplas_python",
+      "patterns": ["¿Qué es una tupla en Python?", "¿Cómo se definen las tuplas?", "¿Cuáles son las diferencias entre listas y tuplas?"],
+      "responses": ["Una tupla en Python es una colección ordenada e inmutable de elementos. Se define usando paréntesis, por ejemplo: ('manzana', 'banana', 'cereza'). La diferencia con las listas es que no se pueden modificar una vez creadas."]
+    },
+    {
+      "tag": "diccionarios_python",
+      "patterns": ["¿Qué es un diccionario en Python?", "¿Cómo se definen los diccionarios en Python?", "¿Cuáles son las características de un diccionario?"],
+      "responses": ["Un diccionario en Python es una colección desordenada de pares clave-valor. Se define usando llaves, por ejemplo: {'clave1': 'valor1', 'clave2': 'valor2'}."]
+    },
+    {
+      "tag": "generadores_python",
+      "patterns": ["¿Qué es un generador en Python?", "¿Cómo se crean generadores en Python?", "¿Cuál es la diferencia entre un generador y una lista en Python?"],
+      "responses": ["Un generador en Python es una función que devuelve un iterador que produce valores solo cuando se necesitan, usando la palabra clave 'yield'. Los generadores son más eficientes en cuanto a memoria que las listas."]
+    },
+    {
+      "tag": "decoradores_python",
+      "patterns": ["¿Qué es un decorador en Python?", "¿Para qué se usan los decoradores en Python?", "¿Cómo se define un decorador en Python?"],
+      "responses": ["Un decorador en Python es una función que modifica el comportamiento de otra función. Se aplica usando la sintaxis '@decorador' antes de la definición de una función."]
+    },
+    {
+      "tag": "lambda_functions",
+      "patterns": ["¿Qué son las funciones lambda en Python?", "¿Cómo se usan las funciones lambda?", "¿Qué diferencia hay entre una función lambda y una función normal?"],
+      "responses": ["Las funciones lambda en Python son funciones anónimas de una sola línea. Se definen con la palabra clave 'lambda', seguidas de los parámetros y la expresión que devuelve."]
+    },
+    {
+      "tag": "manejadores_de_archivos",
+      "patterns": ["¿Cómo se manejan archivos en Python?", "¿Cómo leer y escribir archivos en Python?", "¿Qué es el modo 'r' en Python?"],
+      "responses": ["En Python, se pueden manejar archivos usando la función 'open'. Los modos comunes son 'r' para leer, 'w' para escribir, 'a' para agregar, y 'rb' para leer archivos binarios."]
+    },
+    {
+      "tag": "operadores_python",
+      "patterns": ["¿Qué son los operadores en Python?", "¿Cuáles son los operadores más comunes en Python?", "¿Cómo se usan los operadores en Python?"],
+      "responses": ["En Python, los operadores se utilizan para realizar operaciones en variables y valores. Los operadores más comunes son: aritméticos (+, -, *, /), de comparación (==, !=, >, <), lógicos (and, or, not) y de asignación (=, +=, -=)."]
+    },
+    {
+      "tag": "importacion_modulos",
+      "patterns": ["¿Cómo se importan módulos en Python?", "¿Qué es un módulo en Python?", "¿Cómo usar librerías externas en Python?"],
+      "responses": ["En Python, los módulos se importan utilizando la palabra clave 'import'. También se pueden importar funciones específicas con 'from módulo import función'. Para instalar librerías externas se usa el gestor de paquetes 'pip'."]
+    },
+    {
+      "tag": "listas_comprension",
+      "patterns": ["¿Qué es una lista por comprensión en Python?", "¿Cómo funciona la comprensión de listas?", "¿Para qué sirven las listas por comprensión en Python?"],
+      "responses": ["La comprensión de listas es una forma compacta de crear listas en Python. Permite construir una lista a partir de una secuencia o iterador, aplicando una expresión opcionalmente filtrada por una condición."]
+    },
+    {
+      "tag": "iteradores_python",
+      "patterns": ["¿Qué son los iteradores en Python?", "¿Cómo funcionan los iteradores en Python?", "¿Qué es un 'for' en Python?"],
+      "responses": ["Los iteradores en Python son objetos que permiten recorrer una secuencia de elementos, como listas, tuplas o diccionarios. El bucle 'for' se utiliza para iterar sobre estos objetos, accediendo a cada elemento de la secuencia."]
+    },
+    {
+      "tag": "importancia_espacios_python",
+      "patterns": ["¿Por qué los espacios son importantes en Python?", "¿Qué pasa si no se usan los espacios correctamente en Python?", "¿Cómo afecta la indentación en Python?"],
+      "responses": ["En Python, la indentación (espacios en blanco) es esencial para definir bloques de código. A diferencia de otros lenguajes, donde se usan llaves, en Python la indentación indica el comienzo y fin de estructuras de control como funciones, bucles y condicionales."]
+    },
+    {
+      "tag": "modulos_estandar_python",
+      "patterns": ["¿Qué son los módulos estándar en Python?", "¿Cuáles son algunos módulos estándar de Python?", "¿Cómo se utiliza el módulo 'math' en Python?"],
+      "responses": ["Los módulos estándar en Python son librerías que vienen preinstaladas con Python. Algunos ejemplos son 'math' para operaciones matemáticas, 'datetime' para manejar fechas y horas, 'os' para interactuar con el sistema operativo, y 'sys' para acceder a parámetros de la línea de comandos."]
+    },
+    {
+      "tag": "desempeno_python",
+      "patterns": ["¿Cómo mejorar el rendimiento de un programa en Python?", "¿Qué técnicas hay para optimizar un programa Python?", "¿Python es rápido?"],
+      "responses": ["El rendimiento en Python puede mejorarse utilizando técnicas como el uso de generadores, evitar el uso excesivo de bucles anidados, utilizar bibliotecas optimizadas como NumPy para operaciones numéricas, y hacer uso de perfiles de rendimiento para identificar cuellos de botella."]
+    },
+    {
+      "tag": "json_python",
+      "patterns": ["¿Qué es JSON en Python?", "¿Cómo trabajar con JSON en Python?", "¿Cómo convertir un diccionario a JSON en Python?"],
+      "responses": ["JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero. En Python, se puede trabajar con JSON utilizando el módulo 'json'. Se puede convertir un diccionario en un objeto JSON con 'json.dumps()', y convertir un objeto JSON en un diccionario con 'json.loads()'."]
+    },
+    {
+      "tag": "versiones_python",
+      "patterns": ["¿Cuál es la diferencia entre Python 2 y Python 3?", "¿Por qué Python 2 ya no se usa?", "¿Qué cambios importantes trajo Python 3?"],
+      "responses": ["Python 3 es la versión más reciente y no es compatible con Python 2. Los principales cambios incluyen la modificación de la sintaxis de impresión (print como función), la división de enteros que ahora da un float en lugar de un entero, y una mejor gestión de cadenas de texto."]
+    },
+    {
+      "tag": "funciones_avanzadas",
+      "patterns": ["¿Qué son las funciones avanzadas en Python?", "¿Cómo se pueden hacer funciones recursivas en Python?", "¿Qué son las funciones de orden superior en Python?"],
+      "responses": ["Las funciones avanzadas en Python incluyen funciones recursivas, donde una función se llama a sí misma, y funciones de orden superior, que son funciones que aceptan otras funciones como argumentos o devuelven funciones."]
+    },
+    {
+      "tag": "metodos_string",
+      "patterns": ["¿Cuáles son los métodos de las cadenas en Python?", "¿Qué operaciones se pueden hacer con cadenas en Python?", "¿Cómo manipular cadenas de texto en Python?"],
+      "responses": ["En Python, las cadenas tienen métodos como 'upper()' para convertir a mayúsculas, 'lower()' para minúsculas, 'strip()' para eliminar espacios, 'replace()' para reemplazar subcadenas, entre otros."]
+    },
+    {
+      "tag": "comprension_diccionarios",
+      "patterns": ["¿Qué es una comprensión de diccionario en Python?", "¿Cómo crear diccionarios con comprensión en Python?", "¿Qué ventajas tiene la comprensión de diccionarios?"],
+      "responses": ["La comprensión de diccionarios en Python es una forma concisa de crear diccionarios a partir de una secuencia o iterable, usando una expresión. La sintaxis es similar a las comprensiones de listas."]
+    },
+    {
+      "tag": "funciones_recursivas",
+      "patterns": ["¿Qué es una función recursiva?", "¿Cómo crear una función recursiva en Python?", "¿Cuáles son los problemas de las funciones recursivas?"],
+      "responses": ["Una función recursiva es aquella que se llama a sí misma durante su ejecución. Se necesita una condición de parada para evitar la recursión infinita. Son útiles para resolver problemas como el cálculo de factoriales o la búsqueda en estructuras de datos como árboles."]
+    },
+    {
+      "tag": "variables_globales_locales",
+      "patterns": ["¿Qué son las variables locales y globales en Python?", "¿Cuál es la diferencia entre variables locales y globales?", "¿Cómo manejar variables globales en Python?"],
+      "responses": ["Las variables locales son aquellas definidas dentro de una función, mientras que las variables globales son accesibles en todo el programa. Para modificar variables globales dentro de una función, se usa la palabra clave 'global'."]
+    },
+    {
+      "tag": "iteradores_y_generadores",
+      "patterns": ["¿Cuál es la diferencia entre un iterador y un generador en Python?", "¿Cómo funcionan los iteradores y generadores en Python?", "¿Qué es 'yield' en Python?"],
+      "responses": ["Un iterador es un objeto que permite recorrer una secuencia de elementos, mientras que un generador es una función que devuelve un iterador usando 'yield'. Los generadores son más eficientes en memoria porque solo generan los valores cuando se necesitan."]
+    },
+    {
+      "tag": "modulos_python_terceros",
+      "patterns": ["¿Qué son los módulos de terceros en Python?", "¿Cómo instalar módulos externos en Python?", "¿Cuáles son algunos módulos populares de Python de terceros?"],
+      "responses": ["Los módulos de terceros son bibliotecas que no vienen con Python por defecto pero que puedes instalar mediante el gestor de paquetes 'pip'. Algunos ejemplos populares son Requests para manejar solicitudes HTTP y Flask para crear aplicaciones web."]
+    },
+    {
+      "tag": "desempeno_memoria_python",
+      "patterns": ["¿Cómo gestionar la memoria en Python?", "¿Qué técnicas existen para optimizar el uso de memoria en Python?", "¿Cómo evitar el consumo excesivo de memoria en Python?"],
+      "responses": ["En Python, puedes gestionar la memoria utilizando generadores para evitar cargar grandes cantidades de datos en memoria. Además, herramientas como 'gc' (garbage collector) ayudan a liberar memoria no utilizada, y las estructuras de datos como conjuntos y diccionarios son eficientes en términos de memoria."]
+    },
+    {
+      "tag": "multiproceso_python",
+      "patterns": ["¿Cómo hacer multiproceso en Python?", "¿Qué es el módulo 'multiprocessing'?", "¿Cómo paralelizar tareas en Python?"],
+      "responses": ["El módulo 'multiprocessing' permite crear procesos independientes que se ejecutan en paralelo, lo cual puede ser útil para tareas intensivas en CPU. Para usarlo, creas un objeto 'Process' y lo inicias con 'start()'. Esto mejora el rendimiento al aprovechar múltiples núcleos de CPU."]
+    },
+    {
+      "tag": "python_interprete",
+      "patterns": ["¿Qué es el intérprete de Python?", "¿Cómo se ejecuta un programa en Python?", "¿Qué hace el intérprete de Python?"],
+      "responses": ["El intérprete de Python es el programa que ejecuta el código Python. Convierte las instrucciones del código en comandos que la computadora puede entender. Puedes ejecutar un script de Python desde la terminal con el comando 'python script.py'."]
+    },
+    {
+      "tag": "optimizacion_algoritmos_python",
+      "patterns": ["¿Cómo optimizar algoritmos en Python?", "¿Qué técnicas existen para optimizar el rendimiento de los algoritmos en Python?", "¿Cómo hacer que un algoritmo sea más eficiente en Python?"],
+      "responses": ["Para optimizar algoritmos en Python, es importante reducir la complejidad algorítmica, utilizar estructuras de datos adecuadas, evitar el uso innecesario de operaciones costosas como bucles anidados, y aprovechar librerías optimizadas como NumPy o Cython."]
+    },
+    {
+      "tag": "operadores_comparacion",
+      "patterns": ["¿Qué son los operadores de comparación en Python?", "¿Cómo funciona el operador == en Python?", "¿Qué operadores de comparación existen en Python?"],
+      "responses": ["Los operadores de comparación en Python son: '==' para igualdad, '!=' para desigualdad, '>' para mayor que, '<' para menor que, '>=', para mayor o igual que, y '<=' para menor o igual que."]
+    },
+    {
+      "tag": "modulos_externos_python",
+      "patterns": ["¿Cómo instalar módulos externos en Python?", "¿Qué es pip en Python?", "¿Cómo usar pip para instalar librerías en Python?"],
+      "responses": ["Para instalar módulos externos en Python se usa 'pip', el gestor de paquetes de Python. Se puede instalar una librería ejecutando el comando 'pip install nombre_de_librería' en la terminal."]
+    },
+    {
+      "tag": "asyncio_python",
+      "patterns": ["¿Qué es 'asyncio' en Python?", "¿Cómo usar 'asyncio' para tareas concurrentes?", "¿Para qué sirve 'asyncio' en Python?"],
+      "responses": ["'asyncio' es un módulo en Python que permite escribir código concurrente utilizando la sintaxis 'async' y 'await'. Es útil para manejar operaciones de entrada/salida de manera eficiente sin bloquear el programa."]
+    },
+    {
+      "tag": "threading_python",
+      "patterns": ["¿Qué es el módulo 'threading' en Python?", "¿Cómo crear un hilo de ejecución en Python?", "¿Cuáles son los beneficios de usar hilos en Python?"],
+      "responses": ["El módulo 'threading' en Python permite crear hilos de ejecución concurrentes. Los hilos pueden ser útiles para ejecutar tareas de manera paralela, mejorando la eficiencia en programas que requieren realizar varias operaciones simultáneamente."]
+    },
+    {
+      "tag": "metodos_string_python",
+      "patterns": ["¿Cuáles son los métodos de las cadenas de texto en Python?", "¿Cómo se usa el método 'lower()' en Python?", "¿Qué hace el método 'replace()' en Python?"],
+      "responses": ["Python ofrece varios métodos para manipular cadenas de texto, como 'lower()' para convertir a minúsculas, 'upper()' para convertir a mayúsculas, 'replace()' para reemplazar subcadenas, y 'split()' para dividir una cadena en una lista."]
+    },
+    {
+      "tag": "concatenacion_strings",
+      "patterns": ["¿Cómo se concatenan cadenas de texto en Python?", "¿Qué operador se usa para concatenar en Python?", "¿Cómo unir dos strings en Python?"],
+      "responses": ["En Python, las cadenas de texto se pueden concatenar usando el operador '+' o utilizando el método 'join()' para unir una secuencia de cadenas."]
+    },
+    {
+      "tag": "debugging_python",
+      "patterns": ["¿Cómo depurar un programa en Python?", "¿Qué herramientas hay para hacer debugging en Python?", "¿Cómo usar el módulo 'pdb' en Python?"],
+      "responses": ["Para depurar un programa en Python se puede usar el módulo 'pdb', que permite ejecutar el código paso a paso y examinar las variables. También se pueden usar herramientas como IDEs que ofrecen depuración gráfica."]
+    },
+    {
+      "tag": "conjuntos_python",
+      "patterns": ["¿Qué es un conjunto en Python?", "¿Cómo se definen los conjuntos en Python?", "¿Cuáles son las operaciones con conjuntos en Python?"],
+      "responses": ["Un conjunto en Python es una colección no ordenada de elementos únicos. Se define usando llaves, por ejemplo: {1, 2, 3}. Los conjuntos soportan operaciones como la unión, intersección, diferencia y comprobación de pertenencia."]
+    },
+    {
+      "tag": "algoritmos_python",
+      "patterns": ["¿Qué algoritmos se pueden implementar en Python?", "¿Cómo puedo implementar un algoritmo de búsqueda en Python?", "¿Cómo implementar un algoritmo de ordenamiento en Python?"],
+      "responses": ["En Python se pueden implementar diversos algoritmos, como algoritmos de búsqueda (por ejemplo, búsqueda binaria) y algoritmos de ordenamiento (como el algoritmo de ordenamiento por burbuja, quicksort o mergesort)."]
+    },
+    {
+      "tag": "objetos_complejos_python",
+      "patterns": ["¿Qué son los objetos complejos en Python?", "¿Cómo crear objetos complejos en Python?", "¿Cómo puedo usar clases para crear objetos complejos en Python?"],
+      "responses": ["Los objetos complejos en Python se crean usando clases. Las clases permiten definir estructuras con atributos y métodos que representan conceptos complejos, permitiendo encapsular la funcionalidad y comportamiento en objetos."]
+    },
+    {
+      "tag": "conexion_bd_python",
+      "patterns": ["¿Cómo me conecto a una base de datos en Python?", "¿Cómo usar 'sqlite3' para conectar con una base de datos?", "¿Cómo ejecutar consultas en una base de datos desde Python?"],
+      "responses": ["En Python se puede conectar a bases de datos utilizando módulos como 'sqlite3' para bases de datos SQLite, 'mysql-connector' para MySQL, o 'psycopg2' para PostgreSQL. Se ejecutan consultas SQL con el método 'execute()'."]
+    },
+    {
+      "tag": "encoding_python",
+      "patterns": ["¿Qué es el encoding en Python?", "¿Cómo manejar la codificación de texto en Python?", "¿Cómo convertir un string a bytes en Python?"],
+      "responses": ["El encoding en Python se refiere a la conversión de texto a un formato de bytes. Para convertir un string a bytes se puede usar el método 'encode()' y para convertir de bytes a string se usa 'decode()'. Es importante elegir el encoding adecuado, como 'utf-8'."]
+    },
+    {
+      "tag": "librerias_cientificas_python",
+      "patterns": ["¿Qué librerías científicas existen en Python?", "¿Cómo usar 'NumPy' para cálculos científicos?", "¿Qué es 'SciPy' en Python?"],
+      "responses": ["Algunas librerías científicas populares en Python son 'NumPy' para manipulación de arrays y cálculos numéricos, 'SciPy' para algoritmos científicos, y 'Matplotlib' para gráficos. Estas librerías permiten realizar cálculos matemáticos avanzados y visualización de datos."]
+    },
+    {
+      "tag": "fecha_hora_python",
+      "patterns": ["¿Cómo trabajo con fechas y horas en Python?", "¿Qué módulo usar para fechas en Python?", "¿Cómo obtener la fecha y hora actual en Python?"],
+      "responses": ["En Python, se puede trabajar con fechas y horas usando el módulo 'datetime'. Para obtener la fecha y hora actual se usa 'datetime.now()', y para formatear fechas se puede usar 'strftime()'."]
+    },
+    {
+      "tag": "comprension_dict_python",
+      "patterns": ["¿Qué es la comprensión de diccionarios en Python?", "¿Cómo se crea un diccionario por comprensión en Python?", "¿Cuándo usar la comprensión de diccionarios en Python?"],
+      "responses": ["La comprensión de diccionarios en Python permite crear diccionarios de manera compacta y eficiente. Se utiliza una sintaxis similar a la comprensión de listas, con la diferencia de que se definen pares clave-valor."]
+    },
+    {
+      "tag": "variables_globales_python",
+      "patterns": ["¿Qué son las variables globales en Python?", "¿Cómo utilizar variables globales en una función de Python?", "¿Qué es el ámbito de una variable en Python?"],
+      "responses": ["Las variables globales en Python son aquellas definidas fuera de cualquier función y que pueden ser accesadas desde cualquier parte del código. Sin embargo, se recomienda tener cuidado al modificarlas dentro de las funciones, usando la palabra clave 'global'."]
+    },
+    {
+      "tag": "expresiones_lambda",
+      "patterns": ["¿Qué es una expresión lambda en Python?", "¿Cómo se usa 'lambda' en Python?", "¿Cuándo utilizar funciones lambda en Python?"],
+      "responses": ["Una expresión 'lambda' en Python es una forma compacta de definir funciones anónimas. Se usa cuando se requiere una función simple y corta. La sintaxis es 'lambda argumentos: expresión', por ejemplo: 'lambda x: x + 2'."]
+    },
+    {
+      "tag": "diccionarios_python",
+      "patterns": ["¿Qué es un diccionario en Python?", "¿Cómo se define un diccionario en Python?", "¿Qué operaciones se pueden hacer con diccionarios en Python?"],
+      "responses": ["Un diccionario en Python es una colección de pares clave-valor. Se define utilizando llaves {}, por ejemplo: {'clave1': valor1, 'clave2': valor2}. Se pueden hacer operaciones como agregar, eliminar, o acceder a valores usando las claves."]
+    },
+    {
+      "tag": "ficheros_python",
+      "patterns": ["¿Cómo abrir un fichero en Python?", "¿Cómo leer y escribir en un archivo en Python?", "¿Qué es el modo 'r' al abrir un archivo en Python?"],
+      "responses": ["Para trabajar con archivos en Python se utiliza la función 'open()'. El modo 'r' es para leer el archivo, 'w' es para escribir (y sobrescribir el archivo), y 'a' es para agregar contenido al final del archivo."]
+    },
+    {
+      "tag": "metodo_map_python",
+      "patterns": ["¿Cómo funciona el método 'map()' en Python?", "¿Para qué se usa 'map()' en Python?", "¿Cómo se aplica una función con 'map()' en Python?"],
+      "responses": ["El método 'map()' en Python aplica una función a cada elemento de un iterable (como una lista o un conjunto) y devuelve un objeto 'map'. Por ejemplo, 'map(función, iterable)'. Se puede convertir el resultado a una lista utilizando 'list()'."]
+    },
+    {
+      "tag": "os_python",
+      "patterns": ["¿Qué es el módulo 'os' en Python?", "¿Cómo usar 'os' para trabajar con el sistema operativo?", "¿Cómo obtener el nombre del directorio actual con 'os' en Python?"],
+      "responses": ["El módulo 'os' en Python proporciona funciones para interactuar con el sistema operativo, como trabajar con archivos y directorios. Para obtener el directorio actual se puede usar 'os.getcwd()'."]
+    },
+    {
+      "tag": "iteradores_python",
+      "patterns": ["¿Qué es un iterador en Python?", "¿Cómo se crea un iterador en Python?", "¿Qué es un generador en Python?"],
+      "responses": ["Un iterador en Python es un objeto que permite recorrer un conjunto de datos, como una lista o un diccionario. Los generadores son una forma de crear iteradores utilizando la palabra clave 'yield', que permite devolver un valor sin perder el estado del iterador."]
+    },
+    {
+      "tag": "funciones_python",
+      "patterns": ["¿Cómo defino una función en Python?", "¿Qué es un parámetro en una función Python?", "¿Cómo se retorna un valor desde una función en Python?"],
+      "responses": ["Las funciones en Python se definen usando la palabra clave 'def', seguida del nombre de la función y sus parámetros entre paréntesis. Para devolver un valor se usa la palabra clave 'return'. Ejemplo: 'def suma(a, b): return a + b'."]
+    },
+    {
+      "tag": "estructuras_condicionales",
+      "patterns": ["¿Cómo funcionan los condicionales en Python?", "¿Cómo uso 'if', 'else' y 'elif' en Python?", "¿Qué pasa si no se cumple una condición en Python?"],
+      "responses": ["Los condicionales en Python permiten ejecutar bloques de código en función de si una condición es verdadera o falsa. Se usan con 'if', seguido de la condición; 'elif' para condiciones adicionales; y 'else' para el caso contrario."]
+    },
+    {
+      "tag": "recursividad_python",
+      "patterns": ["¿Qué es la recursividad en Python?", "¿Cómo se implementa una función recursiva en Python?", "¿Cuáles son los riesgos de la recursividad?"],
+      "responses": ["La recursividad en Python ocurre cuando una función se llama a sí misma. Es útil para resolver problemas que pueden dividirse en subproblemas más pequeños, como el cálculo de factoriales. Un riesgo es el desbordamiento de pila si no se tiene una condición de parada adecuada."]
+    },
+    {
+      "tag": "slicing_python",
+      "patterns": ["¿Qué es el 'slicing' en Python?", "¿Cómo hacer 'slicing' en una lista en Python?", "¿Cómo funciona la notación de índices en Python?"],
+      "responses": ["El 'slicing' en Python es una técnica para obtener una sublista o subsecuencia de un iterable. La sintaxis es [inicio:fin:paso], donde 'inicio' es el índice de inicio, 'fin' el índice de fin (no inclusivo), y 'paso' es el incremento entre elementos."]
+    },
+    {
+      "tag": "funciones_reducir",
+      "patterns": ["¿Cómo usar 'reduce()' en Python?", "¿Qué hace la función 'reduce()' en Python?", "¿Cómo aplicar una operación acumulativa con 'reduce()' en Python?"],
+      "responses": ["La función 'reduce()' en Python aplica una operación acumulativa a los elementos de un iterable, reduciéndolos a un solo valor. Se encuentra en el módulo 'functools'. Ejemplo: 'reduce(función, iterable)'."]
+    },
+    {
+      "tag": "while_python",
+      "patterns": ["¿Cómo funciona el bucle 'while' en Python?", "¿Qué sucede si el bucle 'while' nunca termina?", "¿Cuándo utilizar 'while' en vez de 'for'?"],
+      "responses": ["El bucle 'while' en Python ejecuta un bloque de código mientras una condición sea verdadera. Si la condición nunca se vuelve falsa, el bucle entra en un bucle infinito. Se usa 'while' cuando no se conoce el número exacto de iteraciones, a diferencia del bucle 'for'."]
+    },
+    {
+      "tag": "for_python",
+      "patterns": ["¿Cómo funciona el bucle 'for' en Python?", "¿Qué es un bucle 'for' en Python?", "¿Cómo recorrer una lista con un bucle 'for' en Python?"],
+      "responses": ["El bucle 'for' en Python se usa para iterar sobre una secuencia (como una lista, tupla o rango). La sintaxis básica es 'for elemento in secuencia:', y dentro se pueden realizar las operaciones necesarias con cada elemento."]
+    },
+    {
+      "tag": "funciones_de_orden_alto",
+      "patterns": ["¿Qué son las funciones de orden alto en Python?", "¿Cómo utilizar funciones de orden alto en Python?", "¿Qué es una función que recibe una función como argumento?"],
+      "responses": ["Las funciones de orden alto en Python son aquellas que pueden tomar otras funciones como argumentos o devolver funciones. Un ejemplo común son las funciones 'map()', 'filter()' y 'reduce()', que toman funciones como parámetros para aplicar a los elementos de un iterable."]
+    },
+    {
+      "tag": "debugging_errores_python",
+      "patterns": ["¿Cómo encontrar errores en Python?", "¿Cómo depurar errores en Python?", "¿Qué hacer cuando Python muestra un error de sintaxis?"],
+      "responses": ["Para depurar errores en Python es útil leer el mensaje de error que se muestra en la consola, ya que normalmente indica el tipo de error y la ubicación. El uso del depurador 'pdb' también es recomendable para ejecutar el código paso a paso y encontrar problemas específicos."]
+    },
+    {
+      "tag": "clases_python",
+      "patterns": ["¿Qué son las clases en Python?", "¿Cómo definir una clase en Python?", "¿Qué son los métodos en una clase Python?"],
+      "responses": ["Las clases en Python son plantillas para crear objetos. Se definen utilizando la palabra clave 'class' seguida del nombre de la clase. Dentro de las clases, los métodos son funciones que definen el comportamiento de los objetos. El primer parámetro de cada método es normalmente 'self', que se refiere al objeto actual."]
+    },
+    {
+      "tag": "listas_python",
+      "patterns": ["¿Qué es una lista en Python?", "¿Cómo se crea una lista en Python?", "¿Cómo agregar elementos a una lista en Python?"],
+      "responses": ["Una lista en Python es una colección ordenada de elementos que pueden ser de diferentes tipos. Se crea con corchetes [], por ejemplo: [1, 2, 3]. Se pueden agregar elementos con 'append()', 'extend()', o mediante la asignación directa."]
+    },
+    {
+      "tag": "tuplas_python",
+      "patterns": ["¿Qué es una tupla en Python?", "¿Cuáles son las diferencias entre listas y tuplas en Python?", "¿Cómo crear una tupla en Python?"],
+      "responses": ["Una tupla en Python es una colección ordenada e inmutable de elementos. Se define con paréntesis (), por ejemplo: (1, 2, 3). A diferencia de las listas, las tuplas no pueden modificarse después de ser creadas."]
+    },
+    {
+      "tag": "conjuntos_python",
+      "patterns": ["¿Qué es un conjunto en Python?", "¿Cómo funciona un conjunto en Python?", "¿Cómo agregar elementos a un conjunto en Python?"],
+      "responses": ["Un conjunto en Python es una colección no ordenada de elementos únicos. Se crea usando llaves {}, por ejemplo: {1, 2, 3}. Los conjuntos no permiten duplicados y se pueden agregar elementos con 'add()'."]
+    },
+    {
+      "tag": "comprension_listas_python",
+      "patterns": ["¿Qué es la comprensión de listas en Python?", "¿Cómo crear una lista usando comprensión de listas?", "¿Cuándo usar comprensión de listas en Python?"],
+      "responses": ["La comprensión de listas en Python es una forma compacta de crear listas. Permite aplicar una expresión a cada elemento de un iterable de manera más concisa. La sintaxis es: '[expresión for item in iterable if condición]'."]
+    },
+    {
+      "tag": "excepciones_python",
+      "patterns": ["¿Cómo manejar excepciones en Python?", "¿Qué es una excepción en Python?", "¿Cómo usar 'try' y 'except' en Python?"],
+      "responses": ["En Python, las excepciones son errores que ocurren durante la ejecución del programa. Se manejan con bloques 'try' y 'except'. Si ocurre una excepción en el bloque 'try', se ejecuta el bloque 'except' para manejar el error."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué es un módulo en Python?", "¿Cómo importar un módulo en Python?", "¿Cómo usar funciones de un módulo en Python?"],
+      "responses": ["Un módulo en Python es un archivo que contiene código Python, como funciones, clases o variables. Se importa utilizando la palabra clave 'import'. Por ejemplo, 'import math' te permite usar funciones como 'math.sqrt()'."]
+    },
+    {
+      "tag": "funciones_built_in_python",
+      "patterns": ["¿Cuáles son algunas funciones 'built-in' en Python?", "¿Qué hace la función 'len()' en Python?", "¿Cómo usar la función 'type()' en Python?"],
+      "responses": ["Las funciones 'built-in' en Python son funciones que vienen predefinidas, como 'len()', que devuelve la longitud de un objeto, o 'type()', que devuelve el tipo de un objeto."]
+    },
+    {
+      "tag": "variables_locales_python",
+      "patterns": ["¿Qué son las variables locales en Python?", "¿Cómo se usan las variables locales en Python?", "¿Cuál es la diferencia entre una variable local y global en Python?"],
+      "responses": ["Las variables locales en Python son aquellas definidas dentro de una función y solo pueden ser accesadas dentro de esa función. A diferencia de las globales, no se pueden utilizar fuera de su ámbito."]
+    },
+    {
+      "tag": "operadores_comparacion_python",
+      "patterns": ["¿Cuáles son los operadores de comparación en Python?", "¿Cómo usar los operadores '==' y '!=' en Python?", "¿Qué hace el operador '<' en Python?"],
+      "responses": ["Los operadores de comparación en Python incluyen '==', '!=', '<', '>', '<=', '>=' para comparar valores. Por ejemplo, 'a == b' verifica si 'a' es igual a 'b'."]
+    },
+    {
+      "tag": "funciones_recursivas_python",
+      "patterns": ["¿Qué es una función recursiva en Python?", "¿Cómo se implementa una función recursiva?", "¿Cuándo usar recursividad en Python?"],
+      "responses": ["Una función recursiva en Python es una función que se llama a sí misma. Se utiliza comúnmente para resolver problemas que pueden dividirse en subproblemas similares. Un ejemplo es calcular el factorial de un número."]
+    },
+    {
+      "tag": "clases_herencia_python",
+      "patterns": ["¿Qué es la herencia en Python?", "¿Cómo se implementa la herencia en Python?", "¿Qué es una clase hija en Python?"],
+      "responses": ["La herencia en Python permite que una clase herede atributos y métodos de otra. Se define con la sintaxis: 'class ClaseHija(ClasePadre):'. La clase hija puede modificar o agregar nuevos métodos y atributos."]
+    },
+    {
+      "tag": "funciones_anonimas_python",
+      "patterns": ["¿Qué es una función anónima en Python?", "¿Cómo crear una función anónima en Python?", "¿Qué es una lambda en Python?"],
+      "responses": ["Una función anónima en Python es una función sin nombre, creada con la palabra clave 'lambda'. Su sintaxis es 'lambda argumentos: expresión'. Se usa para funciones simples y cortas."]
+    },
+    {
+      "tag": "complejos_python",
+      "patterns": ["¿Cómo se usan los números complejos en Python?", "¿Qué es un número complejo en Python?", "¿Cómo sumar números complejos en Python?"],
+      "responses": ["Los números complejos en Python se representan con la forma 'a + bj', donde 'a' es la parte real y 'b' es la parte imaginaria. Se pueden sumar, restar y multiplicar como números reales."]
+    },
+    {
+      "tag": "operadores_logicos_python",
+      "patterns": ["¿Qué son los operadores lógicos en Python?", "¿Cómo usar 'and', 'or' y 'not' en Python?", "¿Qué hace el operador 'and' en Python?"],
+      "responses": ["Los operadores lógicos en Python son 'and', 'or' y 'not'. Se usan para combinar o invertir condiciones. Por ejemplo, 'a and b' devuelve True si ambos son True."]
+    },
+    {
+      "tag": "sintaxis_python",
+      "patterns": ["¿Cuál es la sintaxis básica de Python?", "¿Cómo se define un bloque de código en Python?", "¿Qué son los indentados en Python?"],
+      "responses": ["La sintaxis básica de Python se basa en la indentación del código. Los bloques de código se definen por la indentación (generalmente de 4 espacios). No se usan llaves {} para los bloques, sino la indentación de las líneas."]
+    },
+    {
+      "tag": "variables_tipos_datos_python",
+      "patterns": ["¿Qué tipos de datos existen en Python?", "¿Cómo se definen las variables en Python?", "¿Qué es un entero en Python?"],
+      "responses": ["En Python, los tipos de datos más comunes son 'int' (enteros), 'float' (números con decimales), 'str' (cadenas de texto), 'bool' (booleanos), 'list' (listas), 'tuple' (tuplas), 'dict' (diccionarios) y 'set' (conjuntos)."]
+    },
+    {
+      "tag": "cadenas_de_texto_python",
+      "patterns": ["¿Cómo manipulo cadenas de texto en Python?", "¿Cómo concatenar cadenas en Python?", "¿Cómo saber la longitud de una cadena en Python?"],
+      "responses": ["Las cadenas de texto en Python se definen con comillas simples o dobles. Para concatenar cadenas se usa el operador '+'. Para obtener la longitud de una cadena se utiliza la función 'len()'."]
+    },
+    {
+      "tag": "subprocesos_python",
+      "patterns": ["¿Cómo manejo subprocesos en Python?", "¿Qué es el módulo 'subprocess' en Python?", "¿Cómo ejecutar un comando en la terminal desde Python?"],
+      "responses": ["El módulo 'subprocess' en Python permite ejecutar comandos en la terminal del sistema operativo. Se puede usar 'subprocess.run()' para ejecutar un comando y obtener su salida."]
+    },
+    {
+      "tag": "funciones_de_orden_alto",
+      "patterns": ["¿Qué son las funciones de orden alto?", "¿Cómo se usan funciones de orden alto en Python?", "¿Qué significa 'higher-order functions'?"],
+      "responses": ["Las funciones de orden alto son aquellas que reciben otras funciones como argumentos o devuelven funciones. En Python, ejemplos de funciones de orden alto son 'map()', 'filter()' y 'reduce()'."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo se importan módulos en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_lambda",
+      "patterns": ["¿Qué es una función lambda en Python?", "¿Cómo se define una función lambda en Python?", "¿Cuándo usar funciones lambda en Python?"],
+      "responses": ["Una función lambda en Python es una función anónima y de una sola línea. Se define con la palabra clave 'lambda', seguida de los argumentos y la expresión. Se usan para funciones simples y cortas."]
+    },
+    {
+      "tag": "listas_python",
+      "patterns": ["¿Qué es una lista en Python?", "¿Cómo se crea una lista en Python?", "¿Cómo acceder a elementos de una lista en Python?"],
+      "responses": ["Una lista en Python es una colección ordenada de elementos que pueden ser de diferentes tipos. Se crea con corchetes [], por ejemplo: [1, 2, 3]. Los elementos se acceden por su índice, empezando en 0."]
+    },
+    {
+      "tag": "tuplas_python",
+      "patterns": ["¿Qué es una tupla en Python?", "¿Cómo se crea una tupla en Python?", "¿Cuál es la diferencia entre una lista y una tupla en Python?"],
+      "responses": ["Una tupla en Python es una colección ordenada e inmutable de elementos. Se crea con paréntesis (), por ejemplo: (1, 2, 3). A diferencia de las listas, las tuplas no pueden modificarse después de ser creadas."]
+    },
+    {
+      "tag": "conjuntos_python",
+      "patterns": ["¿Qué es un conjunto en Python?", "¿Cómo se crea un conjunto en Python?", "¿Qué operaciones se pueden hacer con conjuntos en Python?"],
+      "responses": ["Un conjunto en Python es una colección no ordenada de elementos únicos. Se crea con llaves {}, por ejemplo: {1, 2, 3}. Los conjuntos soportan operaciones como unión, intersección, diferencia y comprobación de pertenencia."]
+    },
+    {
+      "tag": "comprension_listas_python",
+      "patterns": ["¿Qué es la comprensión de listas en Python?", "¿Cómo se crea una lista por comprensión en Python?", "¿Cuándo usar la comprensión de listas en Python?"],
+      "responses": ["La comprensión de listas en Python es una forma concisa de crear listas. Se utiliza una expresión y una secuencia para generar una lista. La sintaxis es: '[expresión for elemento in secuencia if condición]'."]
+    },
+    {
+      "tag": "excepciones_python",
+      "patterns": ["¿Qué son las excepciones en Python?", "¿Cómo manejar excepciones en Python?", "¿Qué es un bloque 'try' y 'except' en Python?"],
+      "responses": ["Las excepciones en Python son errores que ocurren durante la ejecución del programa. Se manejan con bloques 'try' y 'except'. Si ocurre una excepción en el bloque 'try', se ejecuta el bloque 'except' para manejar el error."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_built_in_python",
+      "patterns": ["¿Cuáles son algunas funciones 'built-in' en Python?", "¿Qué hace la función 'len()' en Python?", "¿Cómo usar la función 'type()' en Python?"],
+      "responses": ["Las funciones 'built-in' en Python son funciones predefinidas que están disponibles en cualquier programa. Algunas funciones comunes son 'len()' para obtener la longitud de un objeto, 'type()' para obtener el tipo de un objeto, y 'print()' para mostrar información en la consola."]
+    },
+    {
+      "tag": "variables_locales_python",
+      "patterns": ["¿Qué son las variables locales en Python?", "¿Cómo se usan las variables locales en Python?", "¿Cuál es la diferencia entre una variable local y global en Python?"],
+      "responses": ["Las variables locales en Python son aquellas definidas dentro de una función y solo son accesibles dentro de esa función. A diferencia de las variables globales, las variables locales tienen un ámbito limitado y no pueden ser accedidas desde fuera de la función."]
+    },
+    {
+      "tag": "operadores_comparacion_python",
+      "patterns": ["¿Cuáles son los operadores de comparación en Python?", "¿Cómo usar los operadores '==' y '!=' en Python?", "¿Qué hace el operador '<' en Python?"],
+      "responses": ["Los operadores de comparación en Python se utilizan para comparar dos valores y devolver un resultado booleano. Algunos operadores comunes son '==', '!=', '<', '>', '<=', '>='. Por ejemplo, 'a < b' devuelve True si 'a' es menor que 'b'."]
+    },
+    {
+      "tag": "funciones_recursivas_python",
+      "patterns": ["¿Qué es una función recursiva en Python?", "¿Cómo se implementa una función recursiva en Python?", "¿Cuándo usar recursividad en Python?"],
+      "responses": ["Una función recursiva en Python es una función que se llama a sí misma para resolver un problema. Se utiliza cuando un problema puede dividirse en subproblemas más pequeños. Es importante tener un caso base para evitar un bucle infinito."]
+    },
+    {
+      "tag": "clases_herencia_python",
+      "patterns": ["¿Qué es la herencia en Python?", "¿Cómo se implementa la herencia en Python?", "¿Qué es una clase hija en Python?"],
+      "responses": ["La herencia en Python es un mecanismo que permite a una clase heredar atributos y métodos de otra clase. La clase que hereda se conoce como clase hija o subclase, y la clase de la que hereda se conoce como clase padre o superclase."]
+    },
+    {
+      "tag": "funciones_anonimas_python",
+      "patterns": ["¿Qué es una función anónima en Python?", "¿Cómo crear una función anónima en Python?", "¿Qué es una lambda en Python?"],
+      "responses": ["Una función anónima en Python es una función sin nombre que se define utilizando la palabra clave 'lambda'. Las funciones anónimas son útiles para definir funciones simples y cortas en una sola línea de código."]
+    },
+    {
+      "tag": "complejos_python",
+      "patterns": ["¿Cómo se usan los números complejos en Python?", "¿Qué es un número complejo en Python?", "¿Cómo sumar números complejos en Python?"],
+      "responses": ["Los números complejos en Python se representan con la forma 'a + bj', donde 'a' es la parte real y 'b' es la parte imaginaria. Para sumar dos números complejos, se suman las partes reales y las partes imaginarias por separado."]
+    },
+    {
+      "tag": "operadores_logicos_python",
+      "patterns": ["¿Qué son los operadores lógicos en Python?", "¿Cómo usar 'and', 'or' y 'not' en Python?", "¿Qué hace el operador 'and' en Python?"],
+      "responses": ["Los operadores lógicos en Python se utilizan para combinar o invertir expresiones booleanas. Algunos operadores lógicos comunes son 'and', 'or' y 'not'. Por ejemplo, 'a and b' devuelve True si tanto 'a' como 'b' son True."]
+    },
+    {
+      "tag": "sintaxis_python",
+      "patterns": ["¿Cuál es la sintaxis básica de Python?", "¿Cómo se define un bloque de código en Python?", "¿Qué son los indentados en Python?"],
+      "responses": ["La sintaxis básica de Python se basa en la indentación del código. Los bloques de código se definen por la indentación, generalmente de 4 espacios. No se utilizan llaves {} para delimitar los bloques de código, sino la indentación."]
+    },
+    {
+      "tag": "variables_tipos_datos_python",
+      "patterns": ["¿Qué tipos de datos existen en Python?", "¿Cómo se definen las variables en Python?", "¿Qué es un entero en Python?"],
+      "responses": ["En Python, los tipos de datos más comunes son 'int' para enteros, 'float' para números con decimales, 'str' para cadenas de texto, 'bool' para valores booleanos, 'list' para listas, 'tuple' para tuplas, 'dict' para diccionarios y 'set' para conjuntos."]
+    },
+    {
+      "tag": "cadenas_de_texto_python",
+      "patterns": ["¿Cómo manipulo cadenas de texto en Python?", "¿Cómo concatenar cadenas en Python?", "¿Cómo obtener la longitud de una cadena en Python?"],
+      "responses": ["Las cadenas de texto en Python se manipulan utilizando operadores y métodos de cadenas. Para concatenar cadenas se utiliza el operador '+'. Para obtener la longitud de una cadena se utiliza la función 'len()'."]
+    },
+    {
+      "tag": "subprocesos_python",
+      "patterns": ["¿Cómo manejo subprocesos en Python?", "¿Qué es el módulo 'subprocess' en Python?", "¿Cómo ejecutar un comando en la terminal desde Python?"],
+      "responses": ["El módulo 'subprocess' en Python permite ejecutar comandos en la terminal del sistema operativo desde un programa Python. Se utiliza para interactuar con programas externos y ejecutar comandos en la terminal."]
+    },
+    {
+      "tag": "funciones_de_orden_alto",
+      "patterns": ["¿Qué son las funciones de orden alto?", "¿Cómo se usan funciones de orden alto en Python?", "¿Qué significa 'higher-order functions'?"],
+      "responses": ["Las funciones de orden alto son funciones que pueden tomar otras funciones como argumentos o devolver funciones como resultado. En Python, las funciones de orden alto son comunes y se utilizan para operaciones sobre colecciones de datos."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares en Python son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_lambda",
+      "patterns": ["¿Qué es una función lambda en Python?", "¿Cómo se define una función lambda en Python?", "¿Cuándo usar funciones lambda en Python?"],
+      "responses": ["Una función lambda en Python es una función anónima y de una sola línea. Se define con la palabra clave 'lambda', seguida de los argumentos y la expresión. Las funciones lambda son útiles para definir funciones simples y cortas."]
+    },
+    {
+      "tag": "listas_python",
+      "patterns": ["¿Qué es una lista en Python?", "¿Cómo se crea una lista en Python?", "¿Cómo acceder a elementos de una lista en Python?"],
+      "responses": ["Una lista en Python es una colección ordenada de elementos que pueden ser de diferentes tipos. Se crea con corchetes [], por ejemplo: [1, 2, 3]. Los elementos de una lista se acceden por su índice, empezando en 0."]
+    },
+    {
+      "tag": "tuplas_python",
+      "patterns": ["¿Qué es una tupla en Python?", "¿Cómo se crea una tupla en Python?", "¿Cuál es la diferencia entre una lista y una tupla en Python?"],
+      "responses": ["Una tupla en Python es una colección ordenada e inmutable de elementos. Se crea con paréntesis (), por ejemplo: (1, 2, 3). A diferencia de las listas, las tuplas no pueden modificarse después de ser creadas."]
+    },
+    {
+      "tag": "conjuntos_python",
+      "patterns": ["¿Qué es un conjunto en Python?", "¿Cómo se crea un conjunto en Python?", "¿Qué operaciones se pueden hacer con conjuntos en Python?"],
+      "responses": ["Un conjunto en Python es una colección no ordenada de elementos únicos. Se crea con llaves {}, por ejemplo: {1, 2, 3}. Los conjuntos soportan operaciones como unión, intersección, diferencia y comprobación de pertenencia."]
+    },
+    {
+      "tag": "comprension_listas_python",
+      "patterns": ["¿Qué es la comprensión de listas en Python?", "¿Cómo se crea una lista por comprensión en Python?", "¿Cuándo usar la comprensión de listas en Python?"],
+      "responses": ["La comprensión de listas en Python es una forma concisa de crear listas. Se utiliza una expresión y una secuencia para generar una lista. La sintaxis es: '[expresión for elemento in secuencia if condición]'."]
+    },
+    {
+      "tag": "excepciones_python",
+      "patterns": ["¿Qué son las excepciones en Python?", "¿Cómo manejar excepciones en Python?", "¿Qué es un bloque 'try' y 'except' en Python?"],
+      "responses": ["Las excepciones en Python son errores que ocurren durante la ejecución del programa. Se manejan con bloques 'try' y 'except'. Si ocurre una excepción en el bloque 'try', se ejecuta el bloque 'except' para manejar el error."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_built_in_python",
+      "patterns": ["¿Cuáles son algunas funciones 'built-in' en Python?", "¿Qué hace la función 'len()' en Python?", "¿Cómo usar la función 'type()' en Python?"],
+      "responses": ["Las funciones 'built-in' en Python son funciones predefinidas que están disponibles en cualquier programa. Algunas funciones comunes son 'len()' para obtener la longitud de un objeto, 'type()' para obtener el tipo de un objeto, y 'print()' para mostrar información en la consola."]
+    },
+    {
+      "tag": "variables_locales_python",
+      "patterns": ["¿Qué son las variables locales en Python?", "¿Cómo se usan las variables locales en Python?", "¿Cuál es la diferencia entre una variable local y global en Python?"],
+      "responses": ["Las variables locales en Python son aquellas definidas dentro de una función y solo son accesibles dentro de esa función. A diferencia de las variables globales, las variables locales tienen un ámbito limitado y no pueden ser accedidas desde fuera de la función."]
+    },
+    {
+      "tag": "operadores_comparacion_python",
+      "patterns": ["¿Cuáles son los operadores de comparación en Python?", "¿Cómo usar los operadores '==' y '!=' en Python?", "¿Qué hace el operador '<' en Python?"],
+      "responses": ["Los operadores de comparación en Python se utilizan para comparar dos valores y devolver un resultado booleano. Algunos operadores comunes son '==', '!=', '<', '>', '<=', '>='. Por ejemplo, 'a < b' devuelve True si 'a' es menor que 'b'."]
+    },
+    {
+      "tag": "funciones_recursivas_python",
+      "patterns": ["¿Qué es una función recursiva en Python?", "¿Cómo se implementa una función recursiva en Python?", "¿Cuándo usar recursividad en Python?"],
+      "responses": ["Una función recursiva en Python es una función que se llama a sí misma para resolver un problema. Se utiliza cuando un problema puede dividirse en subproblemas más pequeños. Es importante tener un caso base para evitar un bucle infinito."]
+    },
+    {
+      "tag": "clases_herencia_python",
+      "patterns": ["¿Qué es la herencia en Python?", "¿Cómo se implementa la herencia en Python?", "¿Qué es una clase hija en Python?"],
+      "responses": ["La herencia en Python es un mecanismo que permite a una clase heredar atributos y métodos de otra clase. La clase que hereda se conoce como clase hija o subclase, y la clase de la que hereda se conoce como clase padre o superclase."]
+    },
+    {
+      "tag": "funciones_anonimas_python",
+      "patterns": ["¿Qué es una función anónima en Python?", "¿Cómo crear una función anónima en Python?", "¿Qué es una lambda en Python?"],
+      "responses": ["Una función anónima en Python es una función sin nombre que se define utilizando la palabra clave 'lambda'. Las funciones anónimas son útiles para definir funciones simples y cortas en una sola línea de código."]
+    },
+    {
+      "tag": "complejos_python",
+      "patterns": ["¿Cómo se usan los números complejos en Python?", "¿Qué es un número complejo en Python?", "¿Cómo sumar números complejos en Python?"],
+      "responses": ["Los números complejos en Python se representan con la forma 'a + bj', donde 'a' es la parte real y 'b' es la parte imaginaria. Para sumar dos números complejos, se suman las partes reales y las partes imaginarias por separado."]
+    },
+    {
+      "tag": "operadores_logicos_python",
+      "patterns": ["¿Qué son los operadores lógicos en Python?", "¿Cómo usar 'and', 'or' y 'not' en Python?", "¿Qué hace el operador 'and' en Python?"],
+      "responses": ["Los operadores lógicos en Python se utilizan para combinar o invertir expresiones booleanas. Algunos operadores lógicos comunes son 'and', 'or' y 'not'. Por ejemplo, 'a and b' devuelve True si tanto 'a' como 'b' son True."]
+    },
+    {
+      "tag": "sintaxis_python",
+      "patterns": ["¿Cuál es la sintaxis básica de Python?", "¿Cómo se define un bloque de código en Python?", "¿Qué son los indentados en Python?"],
+      "responses": ["La sintaxis básica de Python se basa en la indentación del código. Los bloques de código se definen por la indentación, generalmente de 4 espacios. No se utilizan llaves {} para delimitar los bloques de código, sino la indentación."]
+    },
+    {
+      "tag": "variables_tipos_datos_python",
+      "patterns": ["¿Qué tipos de datos existen en Python?", "¿Cómo se definen las variables en Python?", "¿Qué es un entero en Python?"],
+      "responses": ["En Python, los tipos de datos más comunes son 'int' para enteros, 'float' para números con decimales, 'str' para cadenas de texto, 'bool' para valores booleanos, 'list' para listas, 'tuple' para tuplas, 'dict' para diccionarios y 'set' para conjuntos."]
+    },
+    {
+      "tag": "cadenas_de_texto_python",
+      "patterns": ["¿Cómo manipulo cadenas de texto en Python?", "¿Cómo concatenar cadenas en Python?", "¿Cómo obtener la longitud de una cadena en Python?"],
+      "responses": ["Las cadenas de texto en Python se manipulan utilizando operadores y métodos de cadenas. Para concatenar cadenas se utiliza el operador '+'. Para obtener la longitud de una cadena se utiliza la función 'len()'."]
+    },
+    {
+      "tag": "subprocesos_python",
+      "patterns": ["¿Cómo manejo subprocesos en Python?", "¿Qué es el módulo 'subprocess' en Python?", "¿Cómo ejecutar un comando en la terminal desde Python?"],
+      "responses": ["El módulo 'subprocess' en Python permite ejecutar comandos en la terminal del sistema operativo desde un programa Python. Se utiliza para interactuar con programas externos y ejecutar comandos en la terminal."]
+    },
+    {
+      "tag": "funciones_de_orden_alto",
+      "patterns": ["¿Qué son las funciones de orden alto?", "¿Cómo se usan funciones de orden alto en Python?", "¿Qué significa 'higher-order functions'?"],
+      "responses": ["Las funciones de orden alto son funciones que pueden tomar otras funciones como argumentos o devolver funciones como resultado. En Python, las funciones de orden alto son comunes y se utilizan para operaciones sobre colecciones de datos."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares en Python son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_lambda",
+      "patterns": ["¿Qué es una función lambda en Python?", "¿Cómo se define una función lambda en Python?", "¿Cuándo usar funciones lambda en Python?"],
+      "responses": ["Una función lambda en Python es una función anónima y de una sola línea. Se define con la palabra clave 'lambda', seguida de los argumentos y la expresión. Las funciones lambda son útiles para definir funciones simples y cortas."]
+    },
+    {
+      "tag": "listas_python",
+      "patterns": ["¿Qué es una lista en Python?", "¿Cómo se crea una lista en Python?", "¿Cómo acceder a elementos de una lista en Python?"],
+      "responses": ["Una lista en Python es una colección ordenada de elementos que pueden ser de diferentes tipos. Se crea con corchetes [], por ejemplo: [1, 2, 3]. Los elementos de una lista se acceden por su índice, empezando en 0."]
+    },
+    {
+      "tag": "tuplas_python",
+      "patterns": ["¿Qué es una tupla en Python?", "¿Cómo se crea una tupla en Python?", "¿Cuál es la diferencia entre una lista y una tupla en Python?"],
+      "responses": ["Una tupla en Python es una colección ordenada e inmutable de elementos. Se crea con paréntesis (), por ejemplo: (1, 2, 3). A diferencia de las listas, las tuplas no pueden modificarse después de ser creadas."]
+    },
+    {
+      "tag": "conjuntos_python",
+      "patterns": ["¿Qué es un conjunto en Python?", "¿Cómo se crea un conjunto en Python?", "¿Qué operaciones se pueden hacer con conjuntos en Python?"],
+      "responses": ["Un conjunto en Python es una colección no ordenada de elementos únicos. Se crea con llaves {}, por ejemplo: {1, 2, 3}. Los conjuntos soportan operaciones como unión, intersección, diferencia y comprobación de pertenencia."]
+    },
+    {
+      "tag": "comprension_listas_python",
+      "patterns": ["¿Qué es la comprensión de listas en Python?", "¿Cómo se crea una lista por comprensión en Python?", "¿Cuándo usar la comprensión de listas en Python?"],
+      "responses": ["La comprensión de listas en Python es una forma concisa de crear listas. Se utiliza una expresión y una secuencia para generar una lista. La sintaxis es: '[expresión for elemento in secuencia if condición]'."]
+    },
+    {
+      "tag": "excepciones_python",
+      "patterns": ["¿Qué son las excepciones en Python?", "¿Cómo manejar excepciones en Python?", "¿Qué es un bloque 'try' y 'except' en Python?"],
+      "responses": ["Las excepciones en Python son errores que ocurren durante la ejecución del programa. Se manejan con bloques 'try' y 'except'. Si ocurre una excepción en el bloque 'try', se ejecuta el bloque 'except' para manejar el error."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_built_in_python",
+      "patterns": ["¿Cuáles son algunas funciones 'built-in' en Python?", "¿Qué hace la función 'len()' en Python?", "¿Cómo usar la función 'type()' en Python?"],
+      "responses": ["Las funciones 'built-in' en Python son funciones predefinidas que están disponibles en cualquier programa. Algunas funciones comunes son 'len()' para obtener la longitud de un objeto, 'type()' para obtener el tipo de un objeto, y 'print()' para mostrar información en la consola."]
+    },
+    {
+      "tag": "variables_locales_python",
+      "patterns": ["¿Qué son las variables locales en Python?", "¿Cómo se usan las variables locales en Python?", "¿Cuál es la diferencia entre una variable local y global en Python?"],
+      "responses": ["Las variables locales en Python son aquellas definidas dentro de una función y solo son accesibles dentro de esa función. A diferencia de las variables globales, las variables locales tienen un ámbito limitado y no pueden ser accedidas desde fuera de la función."]
+    },
+    {
+      "tag": "operadores_comparacion_python",
+      "patterns": ["¿Cuáles son los operadores de comparación en Python?", "¿Cómo usar los operadores '==' y '!=' en Python?", "¿Qué hace el operador '<' en Python?"],
+      "responses": ["Los operadores de comparación en Python se utilizan para comparar dos valores y devolver un resultado booleano. Algunos operadores comunes son '==', '!=', '<', '>', '<=', '>='. Por ejemplo, 'a < b' devuelve True si 'a' es menor que 'b'."]
+    },
+    {
+      "tag": "funciones_recursivas_python",
+      "patterns": ["¿Qué es una función recursiva en Python?", "¿Cómo se implementa una función recursiva en Python?", "¿Cuándo usar recursividad en Python?"],
+      "responses": ["Una función recursiva en Python es una función que se llama a sí misma para resolver un problema. Se utiliza cuando un problema puede dividirse en subproblemas más pequeños. Es importante tener un caso base para evitar un bucle infinito."]
+    },
+    {
+      "tag": "clases_herencia_python",
+      "patterns": ["¿Qué es la herencia en Python?", "¿Cómo se implementa la herencia en Python?", "¿Qué es una clase hija en Python?"],
+      "responses": ["La herencia en Python es un mecanismo que permite a una clase heredar atributos y métodos de otra clase. La clase que hereda se conoce como clase hija o subclase, y la clase de la que hereda se conoce como clase padre o superclase."]
+    },
+    {
+      "tag": "funciones_anonimas_python",
+      "patterns": ["¿Qué es una función anónima en Python?", "¿Cómo crear una función anónima en Python?", "¿Qué es una lambda en Python?"],
+      "responses": ["Una función anónima en Python es una función sin nombre que se define utilizando la palabra clave 'lambda'. Las funciones anónimas son útiles para definir funciones simples y cortas en una sola línea de código."]
+    },
+    {
+      "tag": "complejos_python",
+      "patterns": ["¿Cómo se usan los números complejos en Python?", "¿Qué es un número complejo en Python?", "¿Cómo sumar números complejos en Python?"],
+      "responses": ["Los números complejos en Python se representan con la forma 'a + bj', donde 'a' es la parte real y 'b' es la parte imaginaria. Para sumar dos números complejos, se suman las partes reales y las partes imaginarias por separado."]
+    },
+    {
+      "tag": "operadores_logicos_python",
+      "patterns": ["¿Qué son los operadores lógicos en Python?", "¿Cómo usar 'and', 'or' y 'not' en Python?", "¿Qué hace el operador 'and' en Python?"],
+      "responses": ["Los operadores lógicos en Python se utilizan para combinar o invertir expresiones booleanas. Algunos operadores lógicos comunes son 'and', 'or' y 'not'. Por ejemplo, 'a and b' devuelve True si tanto 'a' como 'b' son True."]
+    },
+    {
+      "tag": "sintaxis_python",
+      "patterns": ["¿Cuál es la sintaxis básica de Python?", "¿Cómo se define un bloque de código en Python?", "¿Qué son los indentados en Python?"],
+      "responses": ["La sintaxis básica de Python se basa en la indentación del código. Los bloques de código se definen por la indentación, generalmente de 4 espacios. No se utilizan llaves {} para delimitar los bloques de código, sino la indentación."]
+    },
+    {
+      "tag": "variables_tipos_datos_python",
+      "patterns": ["¿Qué tipos de datos existen en Python?", "¿Cómo se definen las variables en Python?", "¿Qué es un entero en Python?"],
+      "responses": ["En Python, los tipos de datos más comunes son 'int' para enteros, 'float' para números con decimales, 'str' para cadenas de texto, 'bool' para valores booleanos, 'list' para listas, 'tuple' para tuplas, 'dict' para diccionarios y 'set' para conjuntos."]
+    },
+    {
+      "tag": "cadenas_de_texto_python",
+      "patterns": ["¿Cómo manipulo cadenas de texto en Python?", "¿Cómo concatenar cadenas en Python?", "¿Cómo obtener la longitud de una cadena en Python?"],
+      "responses": ["Las cadenas de texto en Python se manipulan utilizando operadores y métodos de cadenas. Para concatenar cadenas se utiliza el operador '+'. Para obtener la longitud de una cadena se utiliza la función 'len()'."]
+    },
+    {
+      "tag": "subprocesos_python",
+      "patterns": ["¿Cómo manejo subprocesos en Python?", "¿Qué es el módulo 'subprocess' en Python?", "¿Cómo ejecutar un comando en la terminal desde Python?"],
+      "responses": ["El módulo 'subprocess' en Python permite ejecutar comandos en la terminal del sistema operativo desde un programa Python. Se utiliza para interactuar con programas externos y ejecutar comandos en la terminal."]
+    },
+    {
+      "tag": "funciones_de_orden_alto",
+      "patterns": ["¿Qué son las funciones de orden alto?", "¿Cómo se usan funciones de orden alto en Python?", "¿Qué significa 'higher-order functions'?"],
+      "responses": ["Las funciones de orden alto son funciones que pueden tomar otras funciones como argumentos o devolver funciones como resultado. En Python, las funciones de orden alto son comunes y se utilizan para operaciones sobre colecciones de datos."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares en Python son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_lambda",
+      "patterns": ["¿Qué es una función lambda en Python?", "¿Cómo se define una función lambda en Python?", "¿Cuándo usar funciones lambda en Python?"],
+      "responses": ["Una función lambda en Python es una función anónima y de una sola línea. Se define con la palabra clave 'lambda', seguida de los argumentos y la expresión. Las funciones lambda son útiles para definir funciones simples y cortas."]
+    },
+    {
+      "tag": "listas_python",
+      "patterns": ["¿Qué es una lista en Python?", "¿Cómo se crea una lista en Python?", "¿Cómo acceder a elementos de una lista en Python?"],
+      "responses": ["Una lista en Python es una colección ordenada de elementos que pueden ser de diferentes tipos. Se crea con corchetes [], por ejemplo: [1, 2, 3]. Los elementos de una lista se acceden por su índice, empezando en 0."]
+    },
+    {
+      "tag": "tuplas_python",
+      "patterns": ["¿Qué es una tupla en Python?", "¿Cómo se crea una tupla en Python?", "¿Cuál es la diferencia entre una lista y una tupla en Python?"],
+      "responses": ["Una tupla en Python es una colección ordenada e inmutable de elementos. Se crea con paréntesis (), por ejemplo: (1, 2, 3). A diferencia de las listas, las tuplas no pueden modificarse después de ser creadas."]
+    },
+    {
+      "tag": "conjuntos_python",
+      "patterns": ["¿Qué es un conjunto en Python?", "¿Cómo se crea un conjunto en Python?", "¿Qué operaciones se pueden hacer con conjuntos en Python?"],
+      "responses": ["Un conjunto en Python es una colección no ordenada de elementos únicos. Se crea con llaves {}, por ejemplo: {1, 2, 3}. Los conjuntos soportan operaciones como unión, intersección, diferencia y comprobación de pertenencia."]
+    },
+    {
+      "tag": "comprension_listas_python",
+      "patterns": ["¿Qué es la comprensión de listas en Python?", "¿Cómo se crea una lista por comprensión en Python?", "¿Cuándo usar la comprensión de listas en Python?"],
+      "responses": ["La comprensión de listas en Python es una forma concisa de crear listas. Se utiliza una expresión y una secuencia para generar una lista. La sintaxis es: '[expresión for elemento in secuencia if condición]'."]
+    },
+    {
+      "tag": "excepciones_python",
+      "patterns": ["¿Qué son las excepciones en Python?", "¿Cómo manejar excepciones en Python?", "¿Qué es un bloque 'try' y 'except' en Python?"],
+      "responses": ["Las excepciones en Python son errores que ocurren durante la ejecución del programa. Se manejan con bloques 'try' y 'except'. Si ocurre una excepción en el bloque 'try', se ejecuta el bloque 'except' para manejar el error."]
+    },
+    {
+      "tag": "modulos_python",
+      "patterns": ["¿Qué son los módulos en Python?", "¿Cómo importar un módulo en Python?", "¿Qué módulos populares existen en Python?"],
+      "responses": ["Los módulos en Python son archivos que contienen código Python reutilizable. Se importan con la palabra clave 'import'. Algunos módulos populares en Python son 'math' para operaciones matemáticas, 'os' para interacción con el sistema operativo, y 'random' para generación de números aleatorios."]
+    },
+    {
+      "tag": "funciones_built_in_python",
+      "patterns": ["¿Cuáles son algunas funciones 'built-in' en Python?", "¿Qué hace la función 'len()' en Python?", "¿Cómo usar la función 'type()' en Python?"],
+      "responses": ["Las funciones 'built-in' en Python son funciones predefinidas que están disponibles en cualquier programa. Algunas funciones comunes son 'len()' para obtener la longitud de un objeto, 'type()' para obtener el tipo de un objeto, y 'print()' para mostrar información en la consola."]
+    },
+    {
+      "tag": "variables_locales_python",
+      "patterns": ["¿Qué son las variables locales en Python?", "¿Cómo se usan las variables locales en Python?", "¿Cuál es la diferencia entre una variable local y global en Python?"],
+      "responses": ["Las variables locales en Python son aquellas definidas dentro de una función y solo son accesibles dentro de esa función. A diferencia de las variables globales, las variables locales tienen un ámbito limitado y no pueden ser accedidas desde fuera de la función."]
+    },
+    {
+      "tag": "operadores_comparacion_python",
+      "patterns": ["¿Cuáles son los operadores de comparación en Python?", "¿Cómo usar los operadores '==' y '!=' en Python?", "¿Qué hace el operador '<' en Python?"],
+      "responses": ["Los operadores de comparación en Python se utilizan para comparar dos valores y devolver un resultado booleano. Algunos operadores comunes son '==', '!=', '<', '>', '<=', '>='. Por ejemplo, 'a < b' devuelve True si 'a' es menor que 'b'."]
+    },
+    {
+      "tag": "funciones_recursivas_python",
+      "patterns": ["¿Qué es una función recursiva en Python?", "¿Cómo se implementa una función recursiva en Python?", "¿Cuándo usar recursividad en Python?"],
+      "responses": ["Una función recursiva en Python es una función que se llama a sí misma para resolver un problema. Se utiliza cuando un problema puede dividirse en subproblemas más pequeños. Es importante tener un caso base para evitar un bucle infinito."]
+    },
+    {
+      "tag": "clases_herencia_python",
+      "patterns": ["¿Qué es la herencia en Python?", "¿Cómo se implementa la herencia en Python?", "¿Qué es una clase hija en Python?"],
+      "responses": ["La herencia en Python es un mecanismo que permite a una clase heredar atributos y métodos de otra clase. La clase que hereda se conoce como clase hija o subclase, y la clase de la que hereda se conoce como clase padre o superclase."]
+    },
+    {
+      "tag": "funciones_anonimas_python",
+      "patterns": ["¿Qué es una función anónima en Python?", "¿Cómo crear una función anónima en Python?", "¿Qué es una lambda en Python?"],
+      "responses": ["Una función anónima en Python es una función sin nombre que se define utilizando la palabra clave 'lambda'. Las funciones anónimas son útiles para definir funciones simples y cortas en una sola línea de código."]
+    },
+    {
+      "tag": "complejos_python",
+      "patterns": ["¿Cómo se usan los números complejos en Python?", "¿Qué es un número complejo en Python?", "¿Cómo sumar números complejos en Python?"],
+      "responses": ["Los números complejos en Python se representan con la forma 'a + bj', donde 'a' es la parte real y 'b' es la parte imaginaria. Para sumar dos números complejos, se suman las partes reales y las partes imaginarias por separado."]
+    },
+    {
+      "tag": "operadores_logicos_python",
+      "patterns": ["¿Qué son los operadores lógicos en Python?", "¿Cómo usar 'and', 'or' y 'not' en Python?", "¿Qué hace el operador 'and' en Python?"],
+      "responses": ["Los operadores lógicos en Python se utilizan para combinar o invertir expresiones booleanas. Algunos operadores lógicos comunes son 'and', 'or' y 'not'. Por ejemplo, 'a and b' devuelve True si tanto 'a' como 'b' son True."]
+    },
+    {
+      "tag": "sintaxis_python",
+      "patterns": ["¿Cuál es la sintaxis básica de Python?", "¿Cómo se define un bloque de código en Python?", "¿Qué son los indentados en Python?"],
+      "responses": ["La sintaxis básica de Python se basa en la indentación del código. Los bloques de código se definen por la indentación, generalmente de 4 espacios. No se utilizan llaves {} para delimitar los bloques de código, sino la indentación."]
+    },
+    {
+      "tag": "variables_tipos_datos_python",
+      "patterns": ["¿Qué tipos de datos existen en Python?", "¿Cómo se definen las variables en Python?", "¿Qué es un entero en Python?"],
+      "responses": ["En Python, los tipos de datos más comunes son 'int' para enteros, 'float' para números con decimales, 'str' para cadenas de texto, 'bool' para valores booleanos, 'list' para listas, 'tuple' para tuplas, 'dict' para diccionarios y 'set' para conjuntos."]
+    },
+    {
+      "tag": "cadenas_de_texto_python",
+      "patterns": ["¿Cómo manipulo cadenas de texto en Python?", "¿Cómo concatenar cadenas en Python?", "¿Cómo obtener la longitud de una cadena en Python?"],
+      "responses": ["Las cadenas de texto en Python se manipulan utilizando operadores y métodos de cadenas. Para concatenar cadenas se utiliza el operador '+'. Para obtener la longitud de una cadena se utiliza la función 'len()'."]
+    },
+    {
+      "tag": "subprocesos_python",
+      "patterns": ["¿Cómo manejo subprocesos en Python?", "¿Qué es el módulo 'subprocess' en Python?", "¿Cómo ejecutar un comando en la terminal desde Python?"],
+      "responses": ["El módulo 'subprocess' en Python permite ejecutar comandos en la terminal del sistema operativo desde un programa Python. Se utiliza para interactuar con programas externos y ejecutar comandos en la terminal."]
+    },
+    {
+      "tag": "funciones_de_orden_alto",
+      "patterns": ["¿Qué son las funciones de orden alto?", "¿Cómo se usan funciones de orden alto en Python?", "¿Qué significa 'higher-order functions'?"],
+      "responses": ["Las funciones de orden alto son funciones que pueden tomar otras funciones como argumentos o devolver funciones como resultado. En Python, las funciones de orden alto son comunes y se utilizan para operaciones sobre colecciones de datos."]
+    }
+  ]
+}
